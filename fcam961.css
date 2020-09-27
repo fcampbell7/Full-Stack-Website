@@ -1,0 +1,290 @@
+/*Pen-Testing CSS Source fcam961*/
+
+*{
+    margin: 0;
+    font-family:arial, sans-serif;
+}
+
+body{
+    background-color:rgba(221, 221, 221, 0.863)
+}
+/*apparently this makes the window responsive to different sizes*/
+@media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+/*navbar styling*/
+header{
+    font-family:arial, sans-serif;
+    font-size:25px;
+    color:white;
+}
+
+.nav-ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4B4B4B;
+}
+
+.nav-li{
+    float:left;
+    display: block;
+    background-color: #4B4B4B;
+    padding: 20px 20px;
+    color: white;
+    text-decoration:none;
+    text-align:center;
+}
+
+.nav-li:hover{
+    background-color:#b3b3b3;
+    color:black;
+    cursor: pointer;
+}
+
+.nav-active{
+    float:left;
+    display: block;
+    background-color: #e064f8;
+    padding: 20px 20px;
+    color: #4b4b4b;
+    text-decoration:none;
+    text-align:center;
+    
+}
+
+/*Image formatting*/
+.small-logo{
+    margin: 0;
+    padding: 0;
+    float:left;
+    width:5.52%;
+
+}
+
+/* Footer Styling */
+div.footer{
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color:#4B4B4B;
+    position:fixed;
+}
+
+.footer-text{
+    color:white;
+    font-weight:100;
+    margin-left:1em;
+    font-size:11px;
+    float:right;
+}
+
+/*Styling for home content*/
+
+div.home-div{
+    width: 100%;
+    /*float: left;*/
+    display:block;
+    /*border: 1px solid red;*/
+}
+
+div.image1-div{
+    width:100%;
+    height:100%;
+    float:left;
+    position: fixed;
+    display: block;
+    /*border: 1px solid red;*/
+}
+
+img.image1{
+    width:100%;
+    height:50%;
+    object-fit:cover;
+    object-position: 100% 100% -150px;
+    border: 5px solid white;
+    background-size: cover;
+}
+
+p.title1{
+    font-family:arial, sans-serif;
+    font-weight: 900;
+    color:#e064f8;
+    text-align:centre;
+    font-size:7em;
+    position:absolute;
+    top:25%;
+    transform: translate(-50%,-50%);
+    left:50%;
+
+} 
+
+p.home-text{
+    font-weight:100;
+    font-size:30px;
+    color: #4b4b4b;
+    margin-left:1em;
+    margin-top:1em;
+    /*float:left;*/
+}
+
+/*Products Styling*/
+
+div.products-div{
+    width: 100%;
+    float: left;
+    display:none;
+    margin-left:10px;
+}
+
+.prod-title{
+    font-weight:bold;
+    margin-top:5px;
+}
+
+.prod-info{
+    font-style:italic;
+    color:rgb(46, 46, 46);
+}
+
+
+.prod-price{
+    font-size:15px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+/*Location Styling*/
+
+div.location-div{
+    width: 100%;
+    float: left;
+    display:none;
+}
+
+img.map{
+    width:50%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-left:25%;
+    margin-right:25%;
+    background-color:white;
+}
+
+div.address{
+    box-align:center;
+    padding:1em;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+    text-align:center;
+    background-color:#4b4b4b;
+    border-radius:10px;
+}
+
+p.address-text{
+    font-weight:100;
+    font-size:20px;
+    color: white;
+    margin-left:1em;
+}
+
+/*News Styling*/
+
+div.news-div{
+    width: 100%;
+    float: left;
+    display:none;
+    margin-left:10px;
+}
+
+.news-date{
+    font-style:italic;
+    margin-top:10px;
+}
+
+.news-title{
+    font-weight:bold;
+    margin-top:3px;
+}
+
+.news-desc{
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.news-img{
+    width:30%;
+    height:50%;
+    margin-left:35%;
+    margin-right:35%;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+/*Guest Book Styling*/
+
+div.guest-div{
+    width: 100%;
+    float: left;
+    display:none;
+}
+
+div.input{
+    padding:1em;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1em;
+    width:50%;
+    background-color:#4b4b4b;
+    border-radius:10px;
+    box-shadow: 5px 10px black;
+}
+
+div.input p{
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+    margin-left:1em;
+}
+
+div.input label{
+    color:white;
+    font-size:12px;
+    margin-left:1em;
+    margin-top:100px;
+}
+div.input input{
+    margin-left:1em;
+    margin-right:1em;
+    margin-top:0.5em;
+    width: 95%;
+}
+
+.submit{
+    width:30%;
+    margin-left:10%;
+    margin-right:35%;
+    margin-top:1em;
+    margin-bottom:0.5em;
+}
+
+iframe.comments{
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+    height:350px;
+    margin-top: 2em;
+    margin-bottom:2em;
+    background-color:white;
+}
+
+.buy{
+    width:5%;
+    margin: 1em;
+}

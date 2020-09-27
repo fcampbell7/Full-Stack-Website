@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en" charset="UTF-8" >
+    <head>
+        <title>Dunedin Dairy</title>
+        <link href="fcam961.css" rel="stylesheet">
+        <link rel="icon" href="http://redsox.uoa.auckland.ac.nz/ds/logo-192x192.png">
+        <script type="text/javascript" src="fcam961.js"></script>
+    </head>
+    <body>
+
+    <!-- Menu Bar -->
+        <img src="http://redsox.uoa.auckland.ac.nz/ds/logo-192x192.png" alt="DD logo" class="small-logo" onclick="alert('Moo!')">
+        <header>
+            <ul class="nav-ul">
+                <li class="nav-li" id="nav-home" onclick="home()">Home</li>
+                <li class="nav-li" id="nav-products" onclick="products()">Products</li>
+                <li class="nav-li" id="nav-location" onclick="locat()">Location</li>
+                <li class="nav-li" id="nav-news" onclick="news()">News</li>
+                <li class="nav-li" id="nav-guest" onclick="guest()">Guest Book</li>
+                <li class="nav-li" id="nav-register" onclick="register()">Register</li>
+                <li class="nav-li" id="nav-login" onclick="login()">Log In</li>
+            </ul>
+         </header>
+
+    <!-- Home Content -->
+        <div class="home-div" id="home">
+            <div class="image1-div">
+                <img src="https://www.newshub.co.nz/home/rural/2020/01/cows-communicate-express-feelings-through-their-moos-study/_jcr_content/par/image.dynimg.full.q75.jpg" alt="Image of a cow" class="image1">
+                <p class="title1">GOT MILK?</p>
+                <p class="home-text">For all your dairy needs, Dunedin Dairy has your back. Our products are guaranteed to be among the <i>freshest</i> and <i>healthiest</i> around.</p>
+                <p class="home-text">Browse the website to purchase Dunedin Dairy products, or to keep up to date with the latest news. </p>
+            </div>
+        </div>
+        
+    <!-- Products Content-->
+        <div class="products-div" id="products">
+        </div>
+
+    <!-- Location Content-->
+        <div class="location-div" id="location">
+                <img src="http://redsox.uoa.auckland.ac.nz/ds/map.png" alt="Map of the shop" class="map">
+            <div class="address">
+                <p class="address-text">535 Pine Hill Road, Dunedin, New Zealand</p>
+                <p class="address-text">email: <a href="mailto:info@dunedindairy.co.nz">info@dunedindairy.co.nz</a></p>
+                <p class="address-text">phone: <a href="tel:+6434486256">+6434486256</a></p>
+            </div>
+        </div>
+
+    <!-- News Content-->
+        <div class="news-div" id="news">
+        </div>
+
+    <!-- Guest Book Content-->
+        <div class="guest-div" id="guest">
+            <div class="input">
+                <p>Feel free to leave a comment!</p>
+                <hr>
+                <label>Comment</label>
+                <input type="text" id="comment">
+                <br>
+                <label>Name</label>
+                <input type="text" id="name">
+                <button type="button" class="submit" onclick = "submit()">Submit</button>
+            </div>
+            <iframe class="comments" id="comments">
+            </iframe>
+        </div>
+
+    <!-- Register Content-->
+
+        <div class="login-div" id="register">
+            <div class="input">
+                <p id="regText">Register a new account</p>
+                <hr>
+                <div id="hideReg">
+                    <label>Username</label>
+                    <input type="text" id="username">
+                    <br>
+                    <label>Password</label>
+                    <input type="password" id="password">
+                    <label>Address</label>
+                    <input type="text" id="address">
+                    <button type="button" class="submit" onclick = "registerUser()">Enter</button>
+                </div>
+            </div>
+        </div>
+
+    <!-- Log in Content-->
+        <div class="login-div" id="login">
+            <div class="input">
+                <p id="loginText">Log In</p>
+                <hr>
+                <div id="hideLog">
+                    <label>Username</label>
+                    <input type="text" id="usr">
+                    <br>
+                    <label>Password</label>
+                    <input type="password" id="pswd">
+                    <button type="button" class="submit" onclick = "userLogin()">Enter</button>
+                </div>
+            </div>
+        </div>
+
+        
+
+    <!--Footer at bottom of page-->
+    <div class="footer"><span class="footer-text">Dunedin Dairy 2020</span></div>
+
+    </body>
+    
+
+</html>
